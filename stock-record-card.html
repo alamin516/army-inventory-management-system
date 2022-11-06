@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-success page-id" id="nav">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/Slogo1.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Section</a>
+                        <ul class="hover-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">Armament etc and store instrument</a>
+                                <ul class="sub-menu1">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">B1</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">B2</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">B3</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">C1</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Something else here</a>
+                                <ul class="sub-menu1">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Lv1</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Lv2</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Lv3</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Lv4</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Lv5</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Lv5</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="vehical.html">Lv7</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-signIn" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="table-section py-5">
+        <div class="container">
+            <div class="row">
+                <h6><a href="index.html">Home</a> / <a href="vehical.html"> Vehicle</a> / <a href="model.html">Model </a>/ <a href="nomenculater.html"></a> / Stock Record Card</h6>
+                <table class="table table-bordered table-one border-dark w-100">
+                   <thead>
+                       <tr>
+                           <th colspan="3" rowspan="2"><p>CARD NO.............. <br><span>Date..............</span></p></th>
+                           <th colspan="5" style="text-decoration: underline; text-align: center;">STOCK RECORD CARD</th>
+                       </tr>
+                       <tr class="text-center">
+                           <th>Interchangeability</th>
+                           <th>Applicability</th>
+                           <th>Description</th>
+                           <th>Stock Number</th>
+                           <th>Location</th>
+                       </tr>
+                       </thead>
+
+                       <tbody>
+                       <tr>
+                           <td rowspan="2">Control Level/MSP</td>
+                           <td rowspan="2"></td>
+                           <td rowspan="2"></td>
+                           <td scope="col"></td>
+                           <td></td>
+                           <td rowspan="5"></td>
+                           <td rowspan="2"></td>
+                           <td rowspan="2"></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                       <tr>
+                           <td rowspan="2">Record Point/BAF</td>
+                           <td rowspan="2"></td>
+                           <td rowspan="2"></td>
+                           <td></td>
+                           <td></td>
+                           <td rowspan="2">Unit of Issue No</td>
+                           <td rowspan="2">Demand Schedule</td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                    </tbody>
+                </table>
+
+
+                <table class="table table-bordered stock-table border-dark  text-center">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="bg-table">DUES IN AND DUES OUT</th>
+                            <th colspan="15" class="table-blossom">RECIFPTS AND ISSUES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="2" class="bg-table">Date</th>
+                            <th rowspan="2" class="bg-table">Demand No </th>
+                            <th rowspan="2" class="bg-table">Depot or Organization</th>
+                            <th rowspan="2" class="bg-table">Quantity Ordered</th>
+                            <th rowspan="2" class="bg-table">Received/ Balance</th>
+                            <th rowspan="2" class="bg-table">Received/ Balance</th>
+                            <th rowspan="2" class="bg-table">Received/ Balance</th>
+                            <th rowspan="2" data-label="RECIFPTS AND ISSUES" class="table-tangerine">Date</th>
+                            <th colspan="3" class="table-lemon">Quantiry Received</th>
+                            <th rowspan="2" class="table-blossom">Voucher No</th>
+                            <th colspan="3" class="table-blue">Issues</th>
+                            <th colspan="3" class="table-everglade">Transfers </th>
+                            <th colspan="3" class="table-green">Balance on Hand</th>
+                            <th class="table-blossom"></th>
+                        </tr>
+                        <tr>
+                            <td class="table-lemon">S</td>
+                            <td class="table-lemon">R</td>
+                            <td class="table-lemon">US</td>
+                            <td class="table-blue">S</td>
+                            <td class="table-blue">R</td>
+                            <td class="table-blue">US</td>
+                            <td class="table-everglade">S</td>
+                            <td class="table-everglade">R</td>
+                            <td class="table-everglade">US</td>
+                            <td class="table-green">S</td>
+                            <td class="table-green">R</td>
+                            <td class="table-green">US</td>
+                            <td class="table-blossom">Sign</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="bg-table"></td>
+                            <td class="table-tangerine"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-lemon"></td>
+                            <td class="table-blossom"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-blue"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-everglade"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-green"></td>
+                            <td class="table-blossom"></td>
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row py-4  footer-bg">
+                <div class="col-md-4 p-0">
+                    <div class="footer-left">
+                        <div class="row px-2">
+                            <div class="col-md-1">
+                                <ul class="p-2">
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-11">
+                                <ul class="p-0">
+                                    <li>Information Technology Directorate</li>
+                                    <li>General Staff Branch</li>
+                                    <li>Army Headquarters</li>
+                                    <li> Dhaka Cantonment, Dhaka - 1206</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="assets/images/BangladeshArmyFacebook.png" alt="" class="rounded-1 h-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-right">
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">Site Map</a>
+                        </li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">Contact Us</a>
+                        </li>
+                        <li><br></li>
+                        <li>
+                            <div class="date">
+                                Today: <span>Saturday, April 23, 2022</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-bottom py-2">
+                    <div class="col-md-6 m-0">
+                        <p>Copyright © 2022 Bangladesh Army</p>
+                    </div>
+                    <div class="col-md-6 text-end m-0">
+                        <p>Unique Visit:
+                            <span>11096299</span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

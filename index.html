@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="nav">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/Slogo1.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Section</a>
+                        <ul class="hover-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">Armament etc and store instrument</a>
+                                <ul class="sub-menu1">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">B1</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">B2</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">B3</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">C1</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Something else here</a>
+                                <ul class="sub-menu1">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Lv1</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Lv2</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Lv3</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Lv4</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Lv5</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Lv5</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="vehical.html">Lv7</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-signIn" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Banner Section -->
+    <section class="banner-section h-100vh">
+        <div class="container banner-bg" style="background-image: url('assets/images/slider.png')">
+            <div class="row">
+                <div class="banner-content text-sm-center">
+                    <h2>Inventory <br> Management</h2>
+                    <button class="btn btn-banner">More Details</button>
+                    <button class="btn btn-banner1">View Demo</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Marque -->
+    <section class="marque">
+        <div class="container bg-dark">
+            <div class="row">
+                <div class="col-md-12">
+                    <marquee behavior="" direction="" class="text-light py-2 fw-bold">Welcome to Bangladesh Army
+                        official website</marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="container bg-dark">
+            <div class="row  py-4 px-0">
+                <div class="col-md-7 pb-sm-5">
+                    <div class="slide-only">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/bdarmy.jpg"
+                                        class="d-block w-100" height="350px" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/3.jpg" class="d-block w-100"
+                                        alt="..." height="350px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                        alt="..." height="350px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                        alt="..." height="350px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                        alt="..." height="350px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                        alt="..." height="350px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                        alt="..." height="350px">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-8 pb-sm-5">
+                            <div class="army-chief-about text-light">
+                                <h2>Chief of Army Staff</h2>
+                                <p>General S M Shafiuddin Ahmed, SBP, OSP, ndu, psc, PhD has taken over the Command of
+                                    Bangladesh Army as the 17th Chief of Army Staff on 24 June 2021.
+                                </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="chief-staff-img">
+                                <img src="assets/images/general-s-m-shafiuddin-ahmed-sbp-osp-ndu-psc-phd.jpg" alt=""
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="card-section">
+        <div class="container bg-dark pt-5">
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="card border-0 mx-1">
+                        <img src="https://www.army.mil.bd/UserFile/HomeContent/homecontent.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#">Welcome</a></h5>
+                            <p class="card-text">On behalf of Bangladesh Army, Information Technology Directorate
+                                welcomes you to this site. <br><br>
+
+                                The information on this web site is intended to endure a study on the early history,
+                                emergence, development, orga</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 mx-1">
+                        <img src="https://www.army.mil.bd/UserFile/HomeContent/Publication.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#">News and Announcement</a></h5>
+                            <p class="card-text"><a href="#">General Instruction Plot/Flat Allotment-2021 (DOHS)</a>
+                                <span> 30/Jun/2021
+                                </span>
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 mx-1">
+                        <img src="https://www.army.mil.bd/UserFile/HomeContent/exam_and_result.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#">Publications and Media</a></h5>
+                            <div class="card-text">
+                                <p><a href="#">General Instruction Plot/Flat Allotment-2021 (DOHS)</a>
+                                    <span>30/Jun/2021</span>
+                                </p>
+                                <p><a href="#">Bangladesh Army Journal 64th Issue</a>
+                                    <span>13/May/2019</span>
+                                </p>
+                                <p><a href="#">Bangladesh Army Journal 63rd Issue</a>
+                                    <span>12/May/2019</span>
+                                </p>
+                            </div>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 mx-1">
+                        <img src="https://www.army.mil.bd/UserFile/HomeContent/tenders.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#">Tender Information</a></h5>
+                            <p class="card-text">On behalf of Bangladesh Army, Information Technology Directorate
+                                welcomes you to this site. <br><br>
+
+                                The information on this web site is intended to endure a study on the early history,
+                                emergence, development, orga</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="spot-light">
+        <div class="container  bg-dark  py-5">
+            <div class="row">
+                <h2>Spotlight</h2>
+                <div class="slide-only">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
+                                aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/bdarmy.jpg" class="d-block w-100"
+                                    height="550px" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/3.jpg" class="d-block w-100"
+                                    alt="..." height="550px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                    alt="..." height="550px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                    alt="..." height="550px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                    alt="..." height="550px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                    alt="..." height="550px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.army.mil.bd/UserFile/Slider/Main/1.jpg" class="d-block w-100"
+                                    alt="..." height="550px">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel-section">
+        <div class="container panel-bg py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel-item">
+                        <div class="panel-heading">
+                            <h3><a href="#">Latest Video</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <img src="https://www.army.mil.bd/UserFile/VideoPoster/Main/bma-passing-out-parade2021.jpg"
+                                    alt="" width="100%" height="224px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel-item">
+                        <div class="panel-heading">
+                            <h3><a href="#">Latest Photo</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row px-2">
+                                <div class="col-md-6 p-1">
+                                    <a href="#">
+                                        <img src="https://www.army.mil.bd/UserFile/PhotoGallery/Thumbs/--1615499737.jpg"
+                                            alt="" width="100%" height="105px">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 p-1">
+                                    <a href="#">
+                                        <img src="https://www.army.mil.bd/UserFile/PhotoGallery/Thumbs/-1490009682.jpg"
+                                            alt="" width="100%" height="105px">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 p-1">
+                                    <a href="#">
+                                        <img src="https://www.army.mil.bd/UserFile/PhotoGallery/Thumbs/--1432920328.jpg"
+                                            alt="" width="100%" height="105px">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 p-1">
+                                    <a href="#">
+                                        <img src="https://www.army.mil.bd/UserFile/PhotoGallery/Thumbs/--492223836.jpg"
+                                            alt="" width="100%" height="105px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel-item">
+                        <div class="panel-heading">
+                            <h3><a href="#">Latest Video</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <ul class="p-2">
+                                        <li><i class="fa fa-external-link"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-11">
+                                    <ul class="p-0">
+                                        <li>Information Technology Directorate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel-item">
+                        <div class="panel-heading">
+                            <h3><a href="#">Latest Video</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">
+                                <img src="https://www.army.mil.bd/UserFile/VideoPoster/Main/bma-passing-out-parade2021.jpg"
+                                    alt="" width="100%" height="224px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row py-4  footer-bg">
+                <div class="col-md-4 p-0">
+                    <div class="footer-left">
+                        <div class="row px-2">
+                            <div class="col-md-1">
+                                <ul class="p-2">
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-11">
+                                <ul class="p-0">
+                                    <li>Information Technology Directorate</li>
+                                    <li>General Staff Branch</li>
+                                    <li>Army Headquarters</li>
+                                    <li> Dhaka Cantonment, Dhaka - 1206</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="assets/images/BangladeshArmyFacebook.png" alt="" class="rounded-1 h-100"></a>
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-right">
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">Site Map</a>
+                        </li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#">Contact Us</a>
+                        </li>
+                        <li><br></li>
+                        <li>
+                            <div class="date">
+                                Today: <span>Saturday, April 23, 2022</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-bottom py-2">
+                <div class="col-md-6 m-0">
+                    <p>Copyright © 2022 Bangladesh Army</p>
+                </div>
+                <div class="col-md-6 text-end m-0">
+                    <p>Unique Visit:
+                        <span>11096299</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/Js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/Js/main.js"></script>
+
+</body>
+
+</html>
